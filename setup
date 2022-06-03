@@ -112,3 +112,11 @@ gnome-shell-extension-installer 1319 1460 517 615 3088 355 36 4245 307
 gnome-shell-extension-installer 1319 1460 517 615 3088 355 36 4245 307 #running again since it doesn't install in the first run :)
 
 # ENABLE extension list and gsconnect extensions
+
+
+# 3. Restart system
+echo "Restart the system? (y/n)"
+read response
+if [response = "y"] 
+then sudo reboot
+else exit 1
