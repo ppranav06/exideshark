@@ -1,9 +1,10 @@
 #!/bin/bash
+# Automatic installation script 
+# UNTESTED!!! 
 
 # --------------------------------------------------
 # Overview of the setup
 # --------------------------------------------------
-# Check for root
 # Chage hostname
 # Edit .bashrc
 # Edit  dnf.conf
@@ -56,7 +57,8 @@ check_root(){
 	fi
 }
 
-hostname(){
+change_hostname(){
+	check_root
 	hostnamectl set-hostname "ThinkPad-L450"
 }
 
@@ -135,7 +137,7 @@ dnf group upgrade -y --with-optional Multimedia
 flatpak install stremio -y
 }
 
-gnome-shell-extensionn-installer(){
+gnome-shell-extension-installer(){
 if [[ -e gnome-shell-extension-installer ]]; then return
 fi
 
@@ -171,6 +173,26 @@ gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 #gnome-extensions enable dash-to-dock@micxgx.gmail.com # SINCE CURRENTLY UNSUPPORTED
 }
 
+restart(){
+check_root
+echo "Restart the system? (y/n)"
+read response
+if [[ response = "y" ]]; then
+	sudo reboot
+else
+	exit 1
+}
 
+# Declared all functions till now
+# Now, actually executing every function one by one :)
+
+change_hostname
+bashrc
+edit_conf
+add_repo
+apps
+gnome-shell-extension-installer
+#runuser -l pranav -c "extensions" #EXTENSIONS INSTALLATION IS A BIG DEAL CURRENTLY
+restart
 
 
