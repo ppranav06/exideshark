@@ -1,0 +1,122 @@
+#!/bin/bash
+# Setup script for myself :)
+
+# 0. Check for Root Privileges
+if [[ $(whoami) != "root"  ]]; then
+        echo "WARNING: This script must be run by root! Exiting..." >&2
+        exit 1
+fi
+# 1. Configuring system
+# Changing hostname
+sudo hostnamectl set-hostname "ThinkPad-L450"
+
+# Edits to .bashrc (adds the following lines to .bashrc, present in Home folder)
+tee -a ~/.bashrc > /dev/null <<EOT
+export PATH="$PATH:/home/pranav/Projects/Shell-scripts"
+
+# This is the alias command. 
+# It replaces the given word in the left with the word in the right. 
+# In my case, I have entered the commands which I usually type wrong and replaced it with the right command. 
+# Syntax: alias WORD_TO_REPLACE = REQUIRED_WORD_TO_BE_ACTUALLY_ENTERED
+
+# Essential aliases
+alias ls=exa
+alias cat=bat
+
+# Spelling mistake aliases
+alias gerp=grep
+alias sduo=sudo
+alias usdo=sudo
+alias cler=clear
+alias cls=clear
+alias isntall=install
+alias shscr="cd ~/Projects/Shell-scripts"
+alias scr="cd ~/Projects/Shell-scripts"
+EOT
+
+# Adding fonts systemwide (now Larabiefont only)
+cd ~/initial-setup/fonts
+sudo cp *. ttf *. TTF /usr/share/fonts/truetype/ && sudo cp *. otf *. OTF /usr/share/fonts/opentype
+cd -
+
+# Adding the following lines to DNF to make transfer speeds faster
+sudo tee -a /etc/dnf/dnf.conf > /dev/null <<EOT
+Fastestmirror=true
+max_parallel_downloads=20
+deltarpm=true
+EOT
+
+#ALTERNATE_METHOD_USING_ECHO
+#sudo echo 'Fastestmirror=true' | sudo tee -a /etc/dnf/dnf.conf > /dev/null
+#sudo echo 'deltarpm=true' | sudo tee -a /etc/dnf/dnf.conf > /dev/null
+#sudo echo 'max_parallel_downloads=20' | sudo tee -a /etc/dnf/dnf.conf > /dev/null
+
+# Updating system
+sudo dnf update -y
+
+# 2. APPS
+# Adding non-free repositories
+sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+# Adding Flatpak Repository
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Adding essential apps
+sudo dnf install -y git bat exa vim neofetch vlc gnome-tweaks gnome-extensions-app papirus-icon-theme android-tools openssh openssl #NOTE: openssl is for GSconnect
+
+# Adding Multimedia codecs
+sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+sudo dnf install -y lame\* --exclude=lame-devel
+sudo dnf group upgrade -y --with-optional Multimedia
+
+# Brave browser
+sudo dnf install -y dnf-plugins-core
+sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+sudo dnf install -y brave-browser
+
+# VS Code
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+sudo dnf install -y code
+
+# Etcher
+curl -1sLf 'https://dl.cloudsmith.io/public/balena/etcher/setup.rpm.sh' | sudo -E bash
+sudo dnf install -y balena-etcher-electron
+
+# GitHub CLI
+sudo dnf install -y 'dnf-command(config-manager)'
+sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+sudo dnf install -y gh
+
+# 2. EXTENSIONS
+# We use a shell script (https://github.com/brunelli/gnome-shell-extension-installer) to install extensions altogether.
+# Installing program first:
+wget -O gnome-shell-extension-installer "https://github.com/brunelli/gnome-shell-extension-installer/raw/master/gnome-shell-extension-installer"
+chmod +x gnome-shell-extension-installer #Executable
+sudo mv gnome-shell-extension-installer /usr/bin/ #Added to root directory, so can be accessed anywhere
+
+# Installing the following extensions:
+#	GSconnect: 1319
+#	Vitals: 1460
+#	Caffeine: 517
+#	Appindicator support: 615
+#	Extension list: 3088
+#	Status area spacing: 355
+#	Lock keys: 36
+#	Gesture improvements: 4245
+#	Dash to Dock: 307
+
+gnome-shell-extension-installer 1319 1460 517 615 3088 355 36 4245 307
+gnome-shell-extension-installer 1319 1460 517 615 3088 355 36 4245 307 #running again since it doesn't install in the first run :)
+
+# ENABLE extension list and gsconnect extensions
+
+
+# 3. Restart system
+echo "Restart the system? (y/n)"
+read response
+if [response = "y"] 
+then sudo reboot
+else exit 1
