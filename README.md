@@ -1,7 +1,8 @@
 # initial-setup
 Initial Setup - installing programs and stuff after a fresh fedora install, completely automated. 
 Now for Fedora alone (my current distro)
-Inspiration from Anthony of LTT
+
+_Inspiration from Anthony of LTT_
 
 ## Steps to get the program
 **Step 1:** Get the executable file via wget:
