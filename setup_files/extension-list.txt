@@ -1,0 +1,12 @@
+Extension numbers
+
+GSconnect: 1319
+Vitals: 1460
+Caffeine: 517
+Appindicator support: 615
+Extension list: 3088
+Status area spacing: 355
+Lock keys: 36
+Gesture improvements: 4245
+Dash to Dock: 307
+

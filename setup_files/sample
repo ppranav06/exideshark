@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+echo "REMOVING bat & exa"
+sudo dnf remove -y bat exa > /dev/null 
