@@ -117,6 +117,7 @@ gnome-shell-extension-installer 1319 1460 517 615 3088 355 36 4245 307 #running 
 # 3. Restart system
 echo "Restart the system? (y/n)"
 read response
-if [response = "y"] 
-then sudo reboot
-else exit 1
+if [response = "y"]; then
+	sudo reboot
+else
+	exit 1

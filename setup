@@ -27,7 +27,24 @@
 #	Status area spacing: 355
 #	Lock keys: 36
 #	Gesture improvements: 4245
-#	Dash to Dock: 307
+#	User themes: 19
+#	Bluetooth Quick Connect: 1401 
+#	Dash to Dock: 307 (UNSUPPORTED)
+# --------------------------------------------------
+# Enable extensions using gnome-extensions tool
+#	GSConnect: gsconnect@andyholmes.github.io
+#	Caffeine: caffeine@patapon.info
+#	Appindicator support: appindicatorsupport@rgcjonas.gmail.com
+#	Status Area Horizontal Spacing: status-area-horizontal-spacing@mathematical.coffee.gmail.com
+#	Vitals: Vitals@CoreCoding.com
+#	Extension list: extension-list@tu.berry
+#	Lock keys: lockkeys@vaina.lt
+#	Gesture improvements: gestureImprovements@gestures
+#	Bluetooth Quick Connect: bluetooth-quick-connect@bjarosze.gmail.com
+#	Removable Drive menu: drive-menu@gnome-shell-extensions.gcampax.github.com
+#	Places menu: places-menu@gnome-shell-extensions.gcampax.github.com
+#	User themes: user-theme@gnome-shell-extensions.gcampax.github.com
+#	Dash to Dock: dash-to-dock@micxgx.gmail.com (UNSUPPORTED)
 # --------------------------------------------------
 # Restart system
 # --------------------------------------------------
@@ -104,7 +121,7 @@ dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
 }
 
 apps(){
-
+check_root
 # Installing apps
 dnf install -y git bat exa vim neofetch vlc gnome-tweaks gnome-extensions-app papirus-icon-theme android-tools openssh openssl brave-browser code balena-etcher-electron gh
 #NOTE: openssl is for GSconnect
@@ -117,3 +134,43 @@ dnf group upgrade -y --with-optional Multimedia
 # Flatpak apps
 flatpak install stremio -y
 }
+
+gnome-shell-extensionn-installer(){
+if [[ -e gnome-shell-extension-installer ]]; then return
+fi
+
+check_root
+# We use a shell script (https://github.com/brunelli/gnome-shell-extension-installer) to install multiple extensions altogether.
+wget -O gnome-shell-extension-installer "https://github.com/brunelli/gnome-shell-extension-installer/raw/master/gnome-shell-extension-installer"
+chmod +x gnome-shell-extension-installer #Executable
+sudo mv gnome-shell-extension-installer /usr/bin/ #Added to root directory, so can be accessed anywhere
+}
+
+extensions(){
+
+# PLEASE USE runuser -l usernameHere -c 'commandHere'
+# Reference: https://www.cyberciti.biz/open-source/command-line-hacks/linux-run-command-as-different-user/
+
+# Installation of extensions first
+gnome-shell-extension-installer 1319 1460 517 615 3088 355 36 4245 19 1401 #307
+gnome-shell-extension-installer 1319 1460 517 615 3088 355 36 4245 19 1401 #307 #running again since it doesn't install in the first run :)
+
+# Enabling extensions
+gnome-extensions enable gsconnect@andyholmes.github.io
+gnome-extensions enable caffeine@patapon.info
+gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
+gnome-extensions enable status-area-horizontal-spacing@mathematical.coffee.gmail.com
+gnome-extensions enable Vitals@CoreCoding.com
+gnome-extensions enable extension-list@tu.berry
+gnome-extensions enable lockkeys@vaina.lt
+gnome-extensions enable gestureImprovements@gestures
+gnome-extensions enable bluetooth-quick-connect@bjarosze.gmail.com
+gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable places-menu@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+#gnome-extensions enable dash-to-dock@micxgx.gmail.com # SINCE CURRENTLY UNSUPPORTED
+}
+
+
+
+
