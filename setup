@@ -181,6 +181,7 @@ if [[ response = "y" ]]; then
 	sudo reboot
 else
 	exit 1
+fi
 }
 
 # Declared all functions till now
