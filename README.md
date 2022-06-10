@@ -6,6 +6,7 @@ Now for Fedora alone .
 _Inspiration from Anthony of LTT_
 
 
+
 ## Steps to get the program
 
 **Step 1:** Get the executable file via wget:
@@ -23,7 +24,7 @@ _Inspiration from Anthony of LTT_
     
     
   <div align="center">
-Pranav Krishna -ExideShark
+Made by Pranav Krishna -ExideShark
 </div>
      
     
