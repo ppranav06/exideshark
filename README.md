@@ -3,7 +3,7 @@
 
 
 
- Installation  of programs and stuff after a fresh **Fedora install**, completely automated. 
+  **Installation  of programs and stuff after a fresh Fedora install , completely automated.**  
 
 Now for Fedora alone . 
 
@@ -21,14 +21,17 @@ _Inspiration from Anthony of LTT_
 
     chmod +x ./setup
 
-**Step 4:** Run the executable with *sudo* (else won't execute)
+**Step 4:** Run the executable with **sudo** (else won't execute)
 
     sudo ./setup
     
     
     
+   
+    
+    
   <div align="center">
-Made by Pranav Krishna -ExideShark
+Made by Pranav Krishna -ExideShark 
 </div>
      
     
