@@ -1,5 +1,6 @@
 # initial-setup
 Initial Setup - installing programs and stuff after a fresh **Fedora install**, completely automated. 
+
 Now for Fedora alone . 
 
 _Inspiration from Anthony of LTT_
