@@ -1,5 +1,5 @@
-# ExideShark Setup 
-![image](https://user-images.githubusercontent.com/93813737/172992710-a47f54a9-16f7-4839-8634-bd9570103282.png)
+# Initial Setup 
+<!--![image](https://user-images.githubusercontent.com/93813737/172992710-a47f54a9-16f7-4839-8634-bd9570103282.png)-->
 
 
 
@@ -21,11 +21,9 @@ _Inspiration from Anthony of LTT_
 
     chmod +x ./setup
 
-**Step 4:** Run the executable with **sudo** (else won't execute)
+**Step 3:** Run the executable with **sudo** (else won't execute)
 
     sudo ./setup
-    
-    
     
    -----------
     
