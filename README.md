@@ -27,14 +27,15 @@ _Inspiration from Anthony of LTT_
     
     
     
-   
+   -----------
     
     
   <div align="center">
 Made by Pranav Krishna -ExideShark 
 
 </div>
-###### Licensed Under      
+
+**Licensed Under**   
     
     
     
