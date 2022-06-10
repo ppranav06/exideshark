@@ -1,5 +1,9 @@
-# initial-setup
-Initial Setup - installing programs and stuff after a fresh **Fedora install**, completely automated. 
+# ExideShark Setup 
+![image](https://user-images.githubusercontent.com/93813737/172992710-a47f54a9-16f7-4839-8634-bd9570103282.png)
+
+
+
+ Installation  of programs and stuff after a fresh **Fedora install**, completely automated. 
 
 Now for Fedora alone . 
 
