@@ -1,10 +1,18 @@
-# initial-setup
-Initial Setup - installing programs and stuff after a fresh fedora install, completely automated. 
-Now for Fedora alone (my current distro)
+# ExideShark Setup 
+![image](https://user-images.githubusercontent.com/93813737/172992710-a47f54a9-16f7-4839-8634-bd9570103282.png)
+
+
+
+  **Installation  of programs and stuff after a fresh Fedora install , completely automated.**  
+
+Now for Fedora alone . 
 
 _Inspiration from Anthony of LTT_
 
+
+
 ## Steps to get the program
+
 **Step 1:** Get the executable file via wget:
 
     wget https://github.com/ppranav06/initial-setup/raw/main/setup
@@ -13,6 +21,24 @@ _Inspiration from Anthony of LTT_
 
     chmod +x ./setup
 
-**Step 4:** Run the executable with *sudo* (else won't execute)
+**Step 4:** Run the executable with **sudo** (else won't execute)
 
     sudo ./setup
+    
+    
+    
+   -----------
+    
+    
+  <div align="center">
+Made by Pranav Krishna -ExideShark 
+
+</div>
+
+**Licensed Under**   
+    
+    
+    
+    
+  
+    
