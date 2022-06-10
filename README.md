@@ -1,15 +1,7 @@
 # Initial Setup 
 <!--![image](https://user-images.githubusercontent.com/93813737/172992710-a47f54a9-16f7-4839-8634-bd9570103282.png)-->
 
-
-
-  **Installation  of programs and stuff after a fresh Fedora install , completely automated.**  
-
-Now for Fedora alone . 
-
-_Inspiration from Anthony of LTT_
-
-
+A post-install script (now for Fedora alone) to get programs and stuff after a fresh install, completely automated. Inspiration from *Anthony of LTT.*
 
 ## Steps to get the program
 
@@ -28,12 +20,11 @@ _Inspiration from Anthony of LTT_
    -----------
     
     
-  <div align="center">
-Made by Pranav Krishna -ExideShark 
-
+<div align="center">
+Made by Pranav Krishna 
 </div>
 
-**Licensed Under**   
+**Licensed Under**
     
     
     
