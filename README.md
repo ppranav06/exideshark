@@ -35,7 +35,7 @@ Made by Pranav Krishna -ExideShark
 
 </div>
 
-**Licensed Under []**   
+**Licensed Under [GPL 3 License]**   
     
     
     
