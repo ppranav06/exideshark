@@ -170,7 +170,7 @@ gnome-extensions enable bluetooth-quick-connect@bjarosze.gmail.com
 gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
 gnome-extensions enable places-menu@gnome-shell-extensions.gcampax.github.com
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
-#gnome-extensions enable dash-to-dock@micxgx.gmail.com # SINCE CURRENTLY UNSUPPORTED
+#gnome-extensions enable dash-to-dock@micxgx.gmail.com # SINCE CURRENTLY UNSUPPORTED, in Gnome 42
 }
 
 restart(){
@@ -193,7 +193,7 @@ edit_conf
 add_repo
 apps
 gnome-shell-extension-installer
-#runuser -l pranav -c "extensions" #EXTENSIONS INSTALLATION IS A BIG DEAL CURRENTLY
+#runuser -l pranav -c "extensions" #EXTENSIONS INSTALLATION IS A BIG DEAL CURRENTLY; cannot execute the function as a user
 restart
 
 
