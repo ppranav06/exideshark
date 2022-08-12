@@ -138,7 +138,7 @@ flatpak install stremio -y
 }
 
 gnome-shell-extension-installer(){
-if [[ -e gnome-shell-extension-installer ]]; then return
+if [[ -e /usr/bin/gnome-shell-extension-installer ]]; then return
 fi
 
 check_root
@@ -154,8 +154,9 @@ extensions(){
 # Reference: https://www.cyberciti.biz/open-source/command-line-hacks/linux-run-command-as-different-user/
 
 # Installation of extensions first
-gnome-shell-extension-installer 1319 1460 517 615 3088 355 36 4245 19 1401 #307
-gnome-shell-extension-installer 1319 1460 517 615 3088 355 36 4245 19 1401 #307 #running again since it doesn't install in the first run :)
+extension_values=(1319 1460 517 615 3088 355 36 4245 19 1401) #307 #ARRAY
+gnome-shell-extension-installer ${extension_values[*]}
+gnome-shell-extension-installer ${extension_values[*]} #running again since it doesn't install in the first run :)
 
 # Enabling extensions
 gnome-extensions enable gsconnect@andyholmes.github.io
