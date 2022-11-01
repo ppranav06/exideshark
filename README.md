@@ -35,7 +35,10 @@ Made by Pranav Krishna -ExideShark
 
 </div>
 
-**Licensed Under [GPL 3 License]**   
+
+
+<p style="text-align: center;">Licensed Under GPL 3 </p>
+   
     
     
     
