@@ -11,6 +11,7 @@ _Inspiration from Anthony of LTT_
 
 [Description ]
 
+
 ## Steps to get the program
 
 **Step 1:** Get the executable file via wget:
@@ -21,24 +22,20 @@ _Inspiration from Anthony of LTT_
 
     chmod +x ./setup
 
-**Step 4:** Run the executable with **sudo** (else won't execute)
+**Step 3:** Run the executable with **sudo** (else won't execute)
 
     sudo ./setup
-    
-    
     
    -----------
     
     
-  <div align="center">
-Made by Pranav Krishna -ExideShark 
-
+<div align="center">
+Made by Pranav Krishna 
 </div>
-
-
 
 - `` Licensed Under [GPL 3]  
 ``   
+
     
     
     
