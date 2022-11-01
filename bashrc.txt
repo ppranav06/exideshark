@@ -1,0 +1,20 @@
+export PATH="$PATH:/home/pranav/Projects/Shell-scripts"
+
+# This is the alias command. 
+# It replaces the given word in the left with the word in the right. 
+# In my case, I have entered the commands which I usually type wrong and replaced it with the right command. 
+# Syntax: alias WORD_TO_REPLACE = REQUIRED_WORD_TO_BE_ACTUALLY_ENTERED
+
+# Essential aliases
+alias ls=exa
+alias cat=bat
+
+# Spelling mistake aliases
+alias gerp=grep
+alias sduo=sudo
+alias usdo=sudo
+alias cler=clear
+alias cls=clear
+alias isntall=install
+alias shscr="cd ~/Projects/Shell-scripts"
+alias scr="cd ~/Projects/Shell-scripts"
