@@ -9,7 +9,7 @@ Now for Fedora alone .
 
 _Inspiration from Anthony of LTT_
 
-
+[Description ]
 
 ## Steps to get the program
 
@@ -37,8 +37,8 @@ Made by Pranav Krishna -ExideShark
 
 
 
-<p style="text-align: center;">Licensed Under GPL 3 </p>
-   
+- `` Licensed Under [GPL 3]  
+``   
     
     
     
