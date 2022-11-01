@@ -1,7 +1,16 @@
-# Initial Setup 
-<!--![image](https://user-images.githubusercontent.com/93813737/172992710-a47f54a9-16f7-4839-8634-bd9570103282.png)-->
+# ExideShark Setup 
+![image](https://user-images.githubusercontent.com/93813737/172992710-a47f54a9-16f7-4839-8634-bd9570103282.png)
 
-A post-install script (now for Fedora alone) to get programs and stuff after a fresh install, completely automated. Inspiration from *Anthony of LTT.*
+
+
+  **Installation  of programs and stuff after a fresh Fedora install , completely automated.**  
+
+Now for Fedora alone . 
+
+_Inspiration from Anthony of LTT_
+
+[Description ]
+
 
 ## Steps to get the program
 
@@ -24,7 +33,9 @@ A post-install script (now for Fedora alone) to get programs and stuff after a f
 Made by Pranav Krishna 
 </div>
 
-**Licensed Under**
+- `` Licensed Under [GPL 3]  
+``   
+
     
     
     
