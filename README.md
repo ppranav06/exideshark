@@ -10,6 +10,7 @@ _Inspiration from Anthony of LTT_
 [Description]
 
 
+
 ## Steps to get the program
 
 **Step 1:** Get the executable file via wget:
@@ -24,7 +25,9 @@ _Inspiration from Anthony of LTT_
 **Step 3:** Run the executable with **sudo** (not as root user)
 
     sudo ./exideshark.sh
-    
+
+### TODO 
+###  Launch Server version , improve documentation , make it more friendly 
    -----------
     
     
