@@ -25,18 +25,28 @@ _Inspiration from Anthony of LTT_
 **Step 3:** Run the executable with **sudo** (not as root user)
 
     sudo ./exideshark.sh
+    
+    
+   
+   
+   -----------
 
 ### TODO 
-###  Launch Server version , improve documentation , make it more friendly 
+### -:Launch Server version 
+### -:Improve documentation
+### -: Make the program run faster and more user friendly 
    -----------
     
     
 <div align="center">
-Made by Pranav Krishna 
+ <strong>Made by Pranav Krishna</strong> 
 </div>
 
-- `` Licensed Under [GPL 3]  
-``   
+
+
+<div align="center">
+<h5> Licensed Under [GPL 3]</h5> </div> 
+
 
     
     
