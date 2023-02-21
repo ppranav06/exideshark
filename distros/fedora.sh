@@ -39,6 +39,20 @@ add_repo(){
 }
 
 
-# Executing functions
+apps(){
+    # Installing apps
+    dnf install -y git bat exa vim neofetch vlc gnome-tweaks gnome-extensions-app papirus-icon-theme android-tools openssh openssl brave-browser code balena-etcher-electron gh
+    #NOTE: openssl is for GSconnect
+
+    # Installing Multimedia codecs
+    dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+    dnf install -y lame\* --exclude=lame-devel
+    dnf group upgrade -y --with-optional Multimedia
+
+    # Flatpak apps
+    flatpak install stremio -y
+}
+
 dnf_conf_edit
 add_repo
+apps

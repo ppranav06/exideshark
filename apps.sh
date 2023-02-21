@@ -3,7 +3,6 @@
 # List of Packages
 
 if [[ -e apt ]]; then DISTRO="debian"
-elif [[ -e apt ]] && [[ -e snap ]]; then DISTRO="ubuntu"
 elif [[ -e dnf ]]; then DISTRO="fedora"
 elif [[ -e pacman ]]; then DISTRO="arch"
 fi
