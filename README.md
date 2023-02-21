@@ -31,10 +31,15 @@ _Inspiration from Anthony of LTT_
    
    -----------
 
-### TODO 
-### -:Launch Server version 
-### -:Improve documentation
-### -: Make the program run faster and more user friendly 
+### <h2 align="center">TODO</h2> 
+
+
+### - [X]   Launch Server version 
+
+### - [x]  Improve documentation
+
+### - [x]  Make the program run faster and more user friendly
+
    -----------
     
     
