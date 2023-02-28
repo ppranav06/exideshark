@@ -1,4 +1,5 @@
-# ExideShark Setup (WORK IN PROGRESS!)
+##                    <strong>   ExideShark Setup</strong>
+
 ![image](https://user-images.githubusercontent.com/93813737/172992710-a47f54a9-16f7-4839-8634-bd9570103282.png)
 
 
