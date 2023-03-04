@@ -6,8 +6,8 @@
 
 _Inspiration from Anthony of LTT_
 
+**Description**
 
-[Description]
 
 
 ## Steps to get the program
@@ -25,15 +25,33 @@ _Inspiration from Anthony of LTT_
 
     sudo ./exideshark.sh
     
+    
+   
+   
+   -----------
+
+### <h2 align="center">TODO</h2> 
+
+
+### - [X]   Launch Server version 
+
+### - [x]  Improve documentation/ Write a extensive documentation for it 
+
+### - [x]  Make the program run faster and more user friendly
+
+
    -----------
     
     
 <div align="center">
-Made by Pranav Krishna 
+ <strong>Made by Pranav Krishna</strong> 
 </div>
 
-- `` Licensed Under [GPL 3]  
-``   
+
+
+<div align="center">
+<h5> Licensed Under [GPL 3]</h5> </div> 
+
 
     
     
