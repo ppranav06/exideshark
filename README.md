@@ -33,7 +33,7 @@ _Inspiration from Anthony of LTT_
 ### <h2 align="center">TODO</h2> 
 
 
-### - [X]   Launch Server version 
+### - [x]   Launch Server version 
 
 ### - [x]  Improve documentation/ Write a extensive documentation for it 
 
