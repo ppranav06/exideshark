@@ -37,7 +37,7 @@ _Inspiration from Anthony of LTT_
 
 ### - [X]   Launch Server version 
 
-### - [x]  Improve documentation/ Write a extensive documentation for it 
+### - [x]  Improve documentation/ Write an extensive documentation for it 
 
 ### - [x]  Make the program run faster and more user friendly
 
