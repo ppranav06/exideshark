@@ -39,7 +39,7 @@ _Inspiration from Anthony of LTT_
 
 ### - [x]  Improve documentation/ Write an extensive documentation for it 
 
-### - [x]  Make the program run faster and more user friendly[Shift the codebase to Rust if possible]
+### - [x]  Make the program run faster and more user friendly (Shift the codebase to Rust if possible)
 
 
    -----------
@@ -52,7 +52,7 @@ _Inspiration from Anthony of LTT_
 
 
 <div align="center">
-<h5> Licensed Under [GPL 3]</h5> </div> 
+<h5> -Licensed Under [GPL 3]</h5> </div> 
 
 
     
