@@ -1,4 +1,5 @@
-# ExideShark Setup (WORK IN PROGRESS!)
+##                    <strong>   ExideShark Setup</strong>
+
 ![image](https://user-images.githubusercontent.com/93813737/172992710-a47f54a9-16f7-4839-8634-bd9570103282.png)
 
 
@@ -35,9 +36,9 @@ _Inspiration from Anthony of LTT_
 
 ### - [x]   Launch Server version 
 
-### - [x]  Improve documentation/ Write a extensive documentation for it 
+### - [x]  Improve documentation/ Write an extensive documentation for it 
 
-### - [x]  Make the program run faster and more user friendly
+### - [x]  Make the program run faster and more user friendly (Shift the codebase to Rust if possible)
 
 
    -----------
@@ -50,7 +51,7 @@ _Inspiration from Anthony of LTT_
 
 
 <div align="center">
-<h5> Licensed Under [GPL 3]</h5> </div> 
+<h5> -Licensed Under [GPL 3]</h5> </div> 
 
 
     
