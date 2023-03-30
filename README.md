@@ -30,15 +30,16 @@ _Inspiration from Anthony of LTT_
    
    
    -----------
+   
 
 ### <h2 align="center">TODO</h2> 
 
 
-### - [x]   Launch Server version 
+###  - [x]   Launch Server version 
 
-### - [x]  Improve documentation/ Write an extensive documentation for it 
+###  - [x]  Improve documentation/ Write an extensive documentation for it 
 
-### - [x]  Make the program run faster and more user friendly (Shift the codebase to Rust if possible)
+###  - [x]  Make the program run faster and more user friendly (Shift the codebase to Rust if possible)
 
 
    -----------
