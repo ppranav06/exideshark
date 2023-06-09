@@ -5,11 +5,9 @@
 
   **Installation  of programs and stuff after a fresh install, completely automated.**  
 
-_Inspiration from Anthony of LTT_
+**Contribution:** Open pull request to [testing](https://github.com/ppranav06/exideshark/tree/testing) branch, not to the main one.
 
 **Description**
-
-
 
 ## Steps to get the program
 
