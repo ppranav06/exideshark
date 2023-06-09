@@ -3,8 +3,9 @@
 
 function change_mirrors(){
 	sudo pacman -Sy reflector
-	echo "[exideshark] Changing mirrors to India"
-	sudo reflector --country India
+	echo "[exideshark] Changing mirrors to the fastest"
+	sudo reflector --connection-timeout 2 --latest 200 --sort age --fastest 30 --protocol https
+	# Works by checking the top updated 200 mirrors, chooses the most recently updated one, then finds the fastest among top 30, all of them supporting HTTPS
 	}
 # Install multimedia codecs
 function codecs(){
@@ -26,7 +27,7 @@ function apps(){
 	cd -
 
 # Installing apps here 
-	echo [exideshark] Installing the required apps
+	echo "[exideshark] Installing the required apps"
 	yay -Sy --noconfirm --needed \
 		bat \
 		exa \
@@ -42,7 +43,7 @@ function apps(){
 }
 
 # Executing functions
-change_mirrors	#changes mirrors to India
+change_mirrors	#changes to the fastest mirrors
 codecs		#installs multimedia codecs
 apps		#install all necessary apps
 
