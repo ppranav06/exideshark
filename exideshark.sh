@@ -19,8 +19,6 @@ write_bashrc(){
 	echo $(cat bashrc.txt) >> ~/.bashrc
 }
 
-
-
 function base_system_declaration(){
 	# Check if /etc/debian_version exists
 	if [ -f /etc/debian_version ]; then
@@ -34,6 +32,13 @@ function base_system_declaration(){
 	fi
 }
 
+function change_permissions(){
+	# Change permissions to be executable for that distro
+	chmod +x "./scripts/$DISTRO-install.sh"
+	# Allow execution of extensions.sh
+	chmod +x "./scripts/extensions.sh"
+}
+
 function installs(){
 	if [[ $DISTRO == "arch" ]]; then 
 		./scripts/arch-install.sh
@@ -42,7 +47,7 @@ function installs(){
 	elif [[ $DISTRO == "debian" ]]; then
 		echo "[exideshark] Exideshark is not yet ready for Debian. Arriving soon."
 	fi
-
+}
 
 function restart_now(){
 
@@ -61,6 +66,7 @@ function restart_now(){
 change_hostname
 write_bashrc
 base_system_declaration
+change_permissions
 installs
 restart_now
 
