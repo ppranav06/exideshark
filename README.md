@@ -11,7 +11,7 @@
 
 ## Steps to get the program
 
-**Step 1:** Get the executable file via wget:
+**Step 1:** Clone the repository:
 
     git clone https://github.com/ppranav06/exideshark
 
@@ -23,20 +23,18 @@
 **Step 3:** Run the executable with **sudo** (not as root user)
 
     sudo ./exideshark.sh
-    
-    
-   
-   
+
    -----------
+   
 
 ### <h2 align="center">TODO</h2> 
 
 
-### - [x]   Launch Server version 
+###  - [x]   Launch Server version 
 
-### - [x]  Improve documentation/ Write an extensive documentation for it 
+###  - [x]  Improve documentation/ Write an extensive documentation for it 
 
-### - [x]  Make the program run faster and more user friendly (Shift the codebase to Rust if possible)
+###  - [x]  Make the program run faster and more user friendly (Shift the codebase to Rust if possible)
 
 
    -----------
