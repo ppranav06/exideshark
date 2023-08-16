@@ -11,7 +11,7 @@
 
 ## Steps to get the program
 
-**Step 1:** Get the executable file via wget:
+**Step 1:** Clone the repository:
 
     git clone https://github.com/ppranav06/exideshark
 
@@ -23,10 +23,7 @@
 **Step 3:** Run the executable with **sudo** (not as root user)
 
     sudo ./exideshark.sh
-    
-    
-   
-   
+
    -----------
    
 
